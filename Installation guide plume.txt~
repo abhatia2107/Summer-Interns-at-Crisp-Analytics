@@ -1,5 +1,5 @@
 Follow guide at
 	https://github.com/plumi/plumi.app/blob/master/docs/INSTALL.rst
-Replace .bin/python with python.
+Replace .bin/python to python.
 Use sudo with every command.
 When open site.cfg file change every user to your-user-name.
