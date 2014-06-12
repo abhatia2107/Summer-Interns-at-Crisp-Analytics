@@ -1,0 +1,69 @@
+download git
+install git with programs is path
+add your name and email address in git using following command
+git config --global user.name "Your Name"
+git config --global user.email example@email.com
+git config --global color.ui auto
+
+clone project from bitbucket
+git clone address
+
+show configuations
+git config -l
+
+to view status of file(s)
+git status
+
+to view status of file(s) in oneline
+git status -s
+
+to add a created file
+git add filename
+
+to add deleted file
+git add -u filename
+
+to commit a file to local repo
+git commit -m "comment"
+
+to add and commit a file together
+git commit -a -m "comment"
+
+to push the commit in remote
+git push origin master
+
+to pull the remote changes
+git pull origin master
+
+to view log (commit history)
+git log
+
+to view log in one line
+git log --oneline
+
+to revert back to previous commit with code changes removal
+git checkout commithash
+
+to revert back to previous commit with code
+git reset --soft commithash
+
+to view all branch
+git branch
+
+to create a branch
+git branch branchname
+
+to add a left commit to a branch
+git branch branchname commithash
+
+to remove a branch
+git branch -d branchname
+
+to remove branch remotely
+git push origin --delete branchname
+
+to merge a branch
+git merge branchname
+
+to push branch to remote
+git push origin branchname
