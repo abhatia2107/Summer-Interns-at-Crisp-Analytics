@@ -1,0 +1,42 @@
+MVC-(MODEL VIEW CONTROLLER)
+===========================
+
+example:put data in db
+connection->query->resultset->business logic
+<?php if $_ROW("marks")>70>
+<td>Disticntion
+
+->knowledge  required
+->replica of td
+->preknowledge of db  field required
+->we concern with distinction(business view) not marks(database view)
+->so require controller for conversion
+
+
+3 parts :
+
+-connection part(MODEL)
+	->INTERACT WITH DB
+ 	->HANDLE BUSINESS LOGIC
+
+
+-conversion part(CONTROLLER)
+	->HANDLE USER REQUESTS
+	->CONVERSION TO DOMAIN LOGIC
+	->WINDOW TOWARDS THE  SYSTEM
+	->WHICH URL SHOULD OPEN WHAT THAT IS WHAT ARE ENDPOINTS
+	->WHICH URL WIL CALL WHAT CONTROLLER
+
+-VIEW that in template (VIEW)
+	->DESIGNING ETC
+
+LATER FAT  MODELS THIN CONTROLLER
+      ========================== 
+
+
+USER->CONTROLLER-|<->MODAL
+				 |->VIEW
+
+EARLER NO INTERACTION B/W MODEL AND VIEW.
+WHEN RUBY ON RAILS COME ON THEN THESE 2 INTERACT ONLY IN CASE OF VALIDATIONS.
+
