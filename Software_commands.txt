@@ -1,0 +1,11 @@
+sudo rm /var/lib/apt/lists/* -vf
+sudo apt-get install codeblocks
+sudo apt-get install git-core
+sudo apt-get install vim
+sudo add-apt-repository ppa:webupd8team/sublime-text-2
+sudo apt-get update
+sudo apt-get install sublime-text
+unzip apache-tomcat-8.0.8.zip
+cd ./bin
+chmod +x *.sh
+./startup.sh
