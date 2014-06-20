@@ -1,6 +1,5 @@
-#!/bin/sh
+#Run this script using sudo
 
-sudo su
 cd /usr/local/src
 wget http://softlayer.dl.sourceforge.net/sourceforge/mcrypt/libmcrypt-2.5.8.tar.gz
 tar -zxvf libmcrypt-2.5.8.tar.gz
