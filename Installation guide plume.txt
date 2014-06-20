@@ -1,5 +1,12 @@
+Before starting installation make sure you have done,
+sudo apt-get install openssl and libssl-dev
 Follow guide at
 	https://github.com/plumi/plumi.app/blob/master/docs/INSTALL.rst
 Replace .bin/python with python.
 Use sudo with every command.
-When open site.cfg file change every user to your-user-name.
+When open site.cfg file change every user to your-user-name or root.
+Make you or root the owner of all files.
+If you face problem with installing docutils during ./bin/buildout -v 
+Then download docutils0.9.1 from this link 
+http://downloads.sourceforge.net/project/docutils/docutils/0.9.1/docutils-0.9.1.tar.gz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fdocutils%2Ffiles%2Fdocutils%2F0.9.1%2F&ts=1403242186&use_mirror=kaz
+And keep this docutils tar.gz file in plumi.app/downloads/dist
