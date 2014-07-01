@@ -2,6 +2,7 @@ Before starting installation make sure you have done,
 sudo apt-get install openssl and libssl-dev
 Follow guide at
 	https://github.com/plumi/plumi.app/blob/master/docs/INSTALL.rst
+sudo easy_install -U distribute
 Replace .bin/python with python.
 Use sudo with every command.
 When open site.cfg file change every user to your-user-name or root.

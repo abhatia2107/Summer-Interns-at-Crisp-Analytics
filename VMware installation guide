@@ -1,0 +1,5 @@
+Download VM from http://www.vmware.com/go/downloadplayer/
+sudo apt-get install build-essential linux-headers-`uname -r`
+cd /home/PC_NAME/Downloads
+gksudo bash ./VMware-Player-6.0.2-1744117.x86_64.bundle\?HashKey\=8df6cd08fb1dda0a4ac43852f5717dc5 
+
