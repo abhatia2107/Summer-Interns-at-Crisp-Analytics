@@ -1,0 +1,32 @@
+/**
+* Travis CI
+* If you want to get overview about it watch https://www.youtube.com/watch?v=JicPX7K_dJs
+* You can also follow Documentation at http://docs.travis-ci.com/user/getting-started/
+*/
+
+
+//To sign in follow sign-in link above
+//For public repository
+https://travis-ci.org
+
+
+//For private repository
+https://travis-ci.com
+
+//Add .travis.yml file to your repository
+//For php file write:
+language: php
+php:
+  - "5.5"
+  - "5.4"
+  - "5.3"
+
+//This will make Travis CI run your tests using phpunit
+
+
+//Follow this link for PHP instruction of travis.yml
+http://docs.travis-ci.com/user/languages/php/
+
+
+//You can see an example .travis.yml at
+https://github.com/travis-ci/travis-ci-php-example/blob/master/.travis.yml

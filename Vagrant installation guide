@@ -1,0 +1,81 @@
+/**
+* This guide assume that you have vagrant.deb file and virtualbox.deb file
+* You can also get their official docs on 
+* https://docs.vagrantup.com/v2/getting-started
+  Or installation guide at http://culttt.com/2013/06/17/setting-up-vagrant-with-laravel-4/
+*/
+
+/**
+To install PHP5 and apache2 on ubuntu
+
+sudo apt-get install apache2
+
+sudo apt-get install php5
+
+sudo apt-get install libapache2-mod-php5
+
+sudo /etc/init.d/apache2 restart
+
+*/
+
+$sudo dpkg -i virtualbox-4.3_4.3.12-93733~Ubuntu~precise_amd64.deb 
+$sudo dpkg -i vagrant_1.6.3_x86_64.deb
+
+#To add through a box
+$vagrant box add event_management
+
+$cd check_project
+$vagrant init laravel/homestead
+// This will create a Vagrantfile in your project with
+
+config.vm.box = "laravel/homestead"
+$vagrant box add laravel/homestead
+//For details of installed software see, http://laravel.com/docs/homestead#included-software
+
+//Make sure your Vagrant file have these lines in it.
+Vagrant.configure("2") do |config|
+  config.vm.box = "precise32"//name of box you are using.
+end
+
+//Now to boot your first Vagrant environment
+$ vagrant up
+
+//If you stuck on remote connection disconnect. Retrying
+/**
+Follow this link
+http://stackoverflow.com/questions/22575261/vagrant-stuck-connection-timeout-retrying
+*/
+$vboxmanage list runningvms
+/**
+This may result in something like this:
+
+"eventmanagement" {5cxxxx-cxxx-4xxx-8xxx-5xxxxxxxxxx}
+
+*/
+
+$vboxmanage controlvm eventmanagement keyboardputscancode 1c
+
+//To check it is running.
+$ vagrant ssh
+
+//change 000-default.conf files(both folder have same file) to laravel public folder
+/etc/apache2/sites-enabled
+/etc/apache2/sites-available
+and add
+<Directory /home/vagrant/laravel/public>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+</Directory>
+
+
+//Go to /etc/apache2 and open apache2.conf 
+and add
+<Directory /home/vagrant/laravel/public>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+</Directory>
+
+//and run
+$a2enmod rewrite

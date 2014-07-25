@@ -9,7 +9,7 @@ sudo apt-get update
 sudo apt-get install sublime-text
 sudo apt-get install codeblocks
 sudo apt-get install build-essential g++
-Apache
+Apache Tomcat
 	unzip apache-tomcat-8.0.8.zip
 	cd ./bin
 	chmod +x *.sh
