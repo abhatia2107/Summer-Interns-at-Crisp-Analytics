@@ -1,0 +1,31 @@
+JAVASCRIPT STANDARDS
+
+1. Using Camel Casing
+=====================
+
+CamelCase is the practice of writing compound words or phrases in which the words are joined without spaces and are capitalized within the compound like BreakFast, myName etc.
+
+2. Using Magic Numbers
+====================== 
+
+If the decision is related to true or false then only 0 and 1 should be  used.Otherwise,proper meaningful words should be used instead of numeric values to make the code more understandable.
+
+3. Variable names must be descriptive
+=====================================
+
+There should be no variable names like x, y, a, b, flag. Variable name must properly specify what they mean.
+
+4. Use parseInt with radix
+==========================
+
+If you parse a string to an integer, then always pass radix as 10 like parseInt("025",10), so that it does not take it to be an octet number.
+
+5. Don't prefix variable name with _
+====================================
+
+Variables with names like _name are not allowed in JSON object, so they must be avoided.
+
+6. Use comments wherever necessary
+==================================
+
+Use comments for telling what a variable or function do.

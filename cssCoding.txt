@@ -1,0 +1,10 @@
+1. Class Names must be used for styling for the reason, the CSS file can be included later somewhere else.
+2. CSS must be included in an HTML file using external stylesheets, this way it becomes more manageable.
+3. Class Names if having long names with more than one word must be used like large_button.
+4. Remove trailing whitecases.
+5. Always use semi-colons. Omitting them will produce errors in production code.
+6. Add comments where needed.
+7. Use shorthand property wherever possible.
+8. Use 3 character hexadecimal notation where possible.
+9. Use @font-face to include some fonts from a .tff file.
+10. If you have to use padding for all sides write it as padding: 10 0 10 5(In the order top,right,bottom,left.) or we can use padding: 20 10(top-bottom left-right) or padding: 20(Equal padding for all sides.)
