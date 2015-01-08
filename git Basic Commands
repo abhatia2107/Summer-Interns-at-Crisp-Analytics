@@ -29,6 +29,12 @@ git commit -m "comment"
 to add and commit a file together
 git commit -a -m "comment"
 
+to amend a commit msg before pushing it on git.
+git commit --amend -m "New commit message"
+
+to open a file with old commit msg and then edit it.
+git commit --amend
+
 to push the commit in remote
 git push origin master
 
@@ -67,3 +73,18 @@ git merge branchname
 
 to push branch to remote
 git push origin branchname
+
+to save your username and password for future use.
+$ git config credential.helper store
+$ git push http://example.com/repo.git
+Username: <type your username>
+Password: <type your password>
+
+[several days later]
+$ git push http://example.com/repo.git
+[your credentials are used automatically]
+
+to hard reset the repository to some particular commit 
+git reset --hard <old-commit-id>
+git push -f
+
